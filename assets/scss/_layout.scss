@@ -1,0 +1,85 @@
+.header-top{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	ul{
+		list-style: none;
+		display: flex;
+		li{
+			margin-right: 20px;
+			a{
+				color: $blue;
+				font-size: 1.6rem;
+			}
+		}
+	}
+	.logo{
+		font-size: 1.6rem;
+		color: $blue;
+	}
+}
+.footer{
+	max-width: 1110px;
+	margin: auto;
+	font-size: 1.6rem;
+	padding: 50px 0;
+	ul{
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		a{
+			color: $blue;
+		}
+	}
+}
+
+/*start faq*/
+.option-setup{
+	p{
+		font-size: 1.4rem;
+		line-height: 1.8;
+	}
+	ul{
+		padding-left: 35px;
+		list-style: none;
+		li{
+			font-size: 1.4rem;
+			line-height: 1.8;
+			color: $blue;
+			position: relative;
+			&:before{
+				position:absolute;
+				content: "";
+				width: 7px;
+				height: 7px;
+				background: $red;
+				border-radius: 50%;
+				left: -20px;
+				top: 8px;
+				margin: auto;
+			}
+			a{
+				color: $blue;
+				&:hover{
+					text-decoration: unset;
+				}
+			}
+		}
+	}
+	ol{
+		li{
+			font-size: 1.4rem;
+			line-height: 1.8;
+		}
+	}
+	a{
+		color: $blue;
+		font-size: 1.4rem;
+		display: block;
+		line-height: 1.8;
+		margin-bottom: 10px;
+		&:hover{
+			text-decoration: unset;
+		}
+	}
+}
